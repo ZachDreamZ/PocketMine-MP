@@ -65,6 +65,7 @@ namespace {
 }
 
 namespace pocketmine {
+	use pocketmine\network\protocol\Info as ProtocolInfo;
 	use pocketmine\utils\Binary;
 	use pocketmine\utils\MainLogger;
 	use pocketmine\utils\ServerKiller;
@@ -76,8 +77,13 @@ namespace pocketmine {
 	const VERSION = "1.6.1dev";
 	const API_VERSION = "2.1.0";
 	const CODENAME = "Unleashed";
-	const MINECRAFT_VERSION = "v0.16.0.5 alpha";
-	const MINECRAFT_VERSION_NETWORK = "0.16.0.5";
+
+	/**
+	 * @deprecated
+	 * These have moved to {@link \pocketmine\network\protocol\Info}. Use those constants instead.
+	 */
+	const MINECRAFT_VERSION = ProtocolInfo::MINECRAFT_VERSION;
+	const MINECRAFT_VERSION_NETWORK = ProtocolInfo::MINECRAFT_VERSION_NETWORK;
 
 	/*
 	 * Startup code. Do not look at it, it may harm you.
