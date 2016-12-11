@@ -78,13 +78,6 @@ namespace pocketmine {
 	const API_VERSION = "2.1.0";
 	const CODENAME = "Unleashed";
 
-	/**
-	 * @deprecated
-	 * These have moved to {@link \pocketmine\network\protocol\Info}. Use those constants instead.
-	 */
-	const MINECRAFT_VERSION = ProtocolInfo::MINECRAFT_VERSION;
-	const MINECRAFT_VERSION_NETWORK = ProtocolInfo::MINECRAFT_VERSION_NETWORK;
-
 	/*
 	 * Startup code. Do not look at it, it may harm you.
 	 * Most of them are hacks to fix date-related bugs, or basic functions used after this
@@ -151,6 +144,14 @@ namespace pocketmine {
 
 	define('pocketmine\DATA', isset($opts["data"]) ? $opts["data"] . DIRECTORY_SEPARATOR : \getcwd() . DIRECTORY_SEPARATOR);
 	define('pocketmine\PLUGIN_PATH', isset($opts["plugins"]) ? $opts["plugins"] . DIRECTORY_SEPARATOR : \getcwd() . DIRECTORY_SEPARATOR . "plugins" . DIRECTORY_SEPARATOR);
+
+	/**
+	 * @deprecated
+	 * These have moved to {@link \pocketmine\network\protocol\Info}. Use those constants instead.
+	 */
+	const MINECRAFT_VERSION = ProtocolInfo::MINECRAFT_VERSION;
+	const MINECRAFT_VERSION_NETWORK = ProtocolInfo::MINECRAFT_VERSION_NETWORK;
+
 
 	Terminal::init();
 
