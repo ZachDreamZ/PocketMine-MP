@@ -147,9 +147,13 @@ namespace pocketmine {
 
 	/**
 	 * @deprecated
-	 * These have moved to {@link \pocketmine\network\protocol\Info}. Use those constants instead.
+	 * This constant has moved to {@link \pocketmine\network\protocol\Info} and will be removed from here in the future.
 	 */
 	const MINECRAFT_VERSION = ProtocolInfo::MINECRAFT_VERSION;
+	/**
+	 * @deprecated
+	 * This constant has moved to {@link \pocketmine\network\protocol\Info} and will be removed from here in the future.
+	 */
 	const MINECRAFT_VERSION_NETWORK = ProtocolInfo::MINECRAFT_VERSION_NETWORK;
 
 
